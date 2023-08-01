@@ -24,10 +24,10 @@ const responsive = {
 const TestProcedures = () => {
   return (
     <div className="w-full h-auto py-20">
-      <h1 className="text-3xl font-medium text-center text-neutral-700">
+      <h1 className="text-3xl font-medium text-center text-neutral-600">
         Popular Test Procedures
       </h1>
-      <div className="mx-auto mt-10 max-w-7xl">
+      <div className="w-full mx-auto mt-10 max-w-7xl">
         <Carousel
           swipeable={false}
           draggable={false}
@@ -38,19 +38,35 @@ const TestProcedures = () => {
           autoPlaySpeed={7000}
           arrows={false}
         >
-          <div className="flex flex-col py-10">
+          <div className="relative flex flex-col px-10 py-10 overflow-hidden border border-neutral-300 rounded-xl">
+            <div className="absolute top-0 w-56 h-56 -rotate-90 bg-blue-200 rounded-l-full bg-opacity-30 -right-20"></div>
             <h1 className="text-3xl font-medium leading-relaxed text-teal-600">
               Congenital Anomaly Scan
             </h1>
-            <ul className="px-3 mt-3 space-y-2 text-sm">
-              <li className="list-disc">
-                Comprehensive detailed evaluation of foetal anomaly and
-                development.
+            <p className="text-lg font-medium text-orange-600">
+              Secure your baby&apos;s future
+            </p>
+            <ul className="px-4 mt-3 space-y-2 text-base tracking-wide text-neutral-700">
+              <li className="list-disc ">
+                Detect issues early, ensure peace of mind.
               </li>
               <li className="list-disc">
                 Best done within 18 to 19 weeks of pregnancy
               </li>
+              <li className="list-disc">
+                Assess heart, brain, limb development, and more, leaving no room
+                for uncertainty.
+              </li>
+
+              <li className="list-disc">
+                Take proactive steps towards securing your baby&apos;s
+                well-being, and embrace the joy of parenthood with confidence.
+              </li>
             </ul>
+            <p className="mt-5 text-base font-medium tracking-wide text-blue-700">
+              Grab this crucial scan without an appointment and enjoy a
+              worry-free pregnancy journey.
+            </p>
           </div>
         </Carousel>
       </div>
