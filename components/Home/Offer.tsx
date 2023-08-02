@@ -42,28 +42,31 @@ const Offer = () => {
           draggable={false}
           showDots={false}
           responsive={responsive}
-          ssr={true} // means to render carousel on server-side.
+          ssr={false} // means to render carousel on server-side.
           infinite={true}
           autoPlay={true}
-          // autoPlay={this.props.deviceType !== "mobile" ? true : false}
-          autoPlaySpeed={10000}
-          arrows={true}
+          autoPlaySpeed={7000}
+          arrows={false}
           keyBoardControl={true}
-          //   customTransition="all .5"
-          //   transitionDuration={1000}
-          containerClass="carousel-container"
-          removeArrowOnDeviceType={["tablet", "mobile"]}
-          // deviceType={this.props.deviceType}
-          dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px"
         >
+          <div className="flex flex-col items-center justify-center ml-5 border-2 border-teal-700 rounded-md w-72 h-72">
+            <div className="relative w-52 h-52">
+              <Image
+                src="/icons/sonography.png"
+                alt="Mammography"
+                fill
+                style={{ objectFit: "cover" }}
+              />
+            </div>
+            <h1 className="font-medium tracking-wide">ULTRASOUND</h1>
+          </div>
           <div className="flex flex-col items-center justify-center ml-5 space-y-2 border-2 border-teal-700 rounded-md w-72 h-72">
             <div className="relative w-48 h-48">
               <Image src="/icons/mammography.png" alt="Mammography" fill />
             </div>
             <h1 className="font-medium tracking-wide">MAMMOGRAPHY</h1>
           </div>
-          <div className="flex flex-col items-center justify-center ml-5 border-2 border-teal-700 rounded-md w-72 h-72">
+          <div className="flex flex-col items-center justify-center ml-5 space-y-2 border-2 border-teal-700 rounded-md w-72 h-72">
             <div className="relative w-48 h-48">
               <Image
                 src="/icons/CTS.png"
@@ -85,11 +88,17 @@ const Offer = () => {
             </div>
             <h1 className="font-medium tracking-wide">DIGITAL X-RAY</h1>
           </div>
-          <div className="flex flex-col items-center justify-center ml-5 border-2 border-teal-700 rounded-md w-72 h-72">
-            Item 4
-          </div>
-          <div className="flex flex-col items-center justify-center ml-5 border-2 border-teal-700 rounded-md w-72 h-72">
-            Item 5
+
+          <div className="flex flex-col items-center justify-center ml-5 space-y-2 border-2 border-teal-700 rounded-md w-72 h-72">
+            <div className="relative w-48 h-48">
+              <Image
+                src="/icons/laboratory.png"
+                alt="Laboratory"
+                fill
+                style={{ objectFit: "cover" }}
+              />
+            </div>
+            <h1 className="font-medium tracking-wide">LABORATORY</h1>
           </div>
         </Carousel>
       </div>

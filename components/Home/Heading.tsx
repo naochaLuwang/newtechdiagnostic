@@ -5,7 +5,7 @@ import { IoMdMail } from "react-icons/io";
 const Heading = () => {
   return (
     <div className="w-full h-10 bg-orange-600">
-      <div className="flex items-center justify-between h-full mx-auto text-white max-w-7xl">
+      <div className="flex items-center justify-between h-full px-16 text-white">
         <div className="flex items-center space-x-2">
           <BsPhoneFill />
           <p>8132043928</p>

@@ -92,7 +92,7 @@ const Navbar = () => {
 
   return (
     <div className={`z-50 w-full h-10  hidden lg:block `}>
-      <div className="flex justify-end w-full px-12">
+      <div className="flex justify-end w-full ">
         <NavigationMenu>
           <NavigationMenuList>
             {data !== null &&

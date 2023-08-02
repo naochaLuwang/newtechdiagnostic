@@ -27,6 +27,10 @@ const TestProcedures = () => {
       <h1 className="text-3xl font-medium text-center text-neutral-600">
         Popular Test Procedures
       </h1>
+      <p className="text-center">
+        Explore Leading Test Procedures for Comprehensive and Accurate Medical
+        Diagnosis
+      </p>
       <div className="w-full mx-auto mt-10 max-w-7xl">
         <Carousel
           swipeable={false}
