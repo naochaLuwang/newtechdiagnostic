@@ -63,7 +63,7 @@ const TestProcedures = () => {
                 well-being, and embrace the joy of parenthood with confidence.
               </li>
             </ul>
-            <p className="mt-5 text-base font-medium tracking-wide text-blue-700">
+            <p className="mt-5 text-base font-medium tracking-wide text-indigo-800">
               Grab this crucial scan without an appointment and enjoy a
               worry-free pregnancy journey.
             </p>

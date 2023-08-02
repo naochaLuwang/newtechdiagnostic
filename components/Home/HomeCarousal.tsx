@@ -33,10 +33,6 @@ const HomeCarousal = () => {
         autoPlay={true}
         autoPlaySpeed={7000}
         arrows={false}
-        // containerClass="carousel-container"
-        // removeArrowOnDeviceType={["tablet", "mobile"]}
-        // dotListClass="custom-dot-list-style"
-        // itemClass="carousel-item-padding-40-px"
       >
         <div className="flex justify-between w-full h-full px-20 ">
           <div className="flex flex-col py-20">

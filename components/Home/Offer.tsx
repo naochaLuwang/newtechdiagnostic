@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -46,7 +47,7 @@ const Offer = () => {
           autoPlay={true}
           // autoPlay={this.props.deviceType !== "mobile" ? true : false}
           autoPlaySpeed={10000}
-          arrows={false}
+          arrows={true}
           keyBoardControl={true}
           //   customTransition="all .5"
           //   transitionDuration={1000}
@@ -56,14 +57,33 @@ const Offer = () => {
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
         >
-          <div className="flex flex-col items-center justify-center ml-5 border-2 border-teal-700 rounded-md w-72 h-72">
-            Item 1
+          <div className="flex flex-col items-center justify-center ml-5 space-y-2 border-2 border-teal-700 rounded-md w-72 h-72">
+            <div className="relative w-48 h-48">
+              <Image src="/icons/mammography.png" alt="Mammography" fill />
+            </div>
+            <h1 className="font-medium tracking-wide">MAMMOGRAPHY</h1>
           </div>
           <div className="flex flex-col items-center justify-center ml-5 border-2 border-teal-700 rounded-md w-72 h-72">
-            Item 2
+            <div className="relative w-48 h-48">
+              <Image
+                src="/icons/CTS.png"
+                alt="Mammography"
+                fill
+                style={{ objectFit: "cover" }}
+              />
+            </div>
+            <h1 className="font-medium tracking-wide">CT SCAN</h1>
           </div>
-          <div className="flex flex-col items-center justify-center ml-5 border-2 border-teal-700 rounded-md w-72 h-72">
-            Item 3
+          <div className="flex flex-col items-center justify-center ml-5 space-y-2 border-2 border-teal-700 rounded-md w-72 h-72">
+            <div className="relative w-48 h-48">
+              <Image
+                src="/icons/XRAY.png"
+                alt="xray"
+                fill
+                style={{ objectFit: "cover" }}
+              />
+            </div>
+            <h1 className="font-medium tracking-wide">DIGITAL X-RAY</h1>
           </div>
           <div className="flex flex-col items-center justify-center ml-5 border-2 border-teal-700 rounded-md w-72 h-72">
             Item 4
