@@ -45,7 +45,7 @@ const Offer = () => {
           ssr={false} // means to render carousel on server-side.
           infinite={true}
           autoPlay={true}
-          autoPlaySpeed={7000}
+          autoPlaySpeed={4000}
           arrows={false}
           keyBoardControl={true}
         >

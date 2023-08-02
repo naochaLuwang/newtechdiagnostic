@@ -41,7 +41,7 @@ const Disorder = () => {
           responsive={responsive}
           infinite={true}
           autoPlay={true}
-          autoPlaySpeed={7000}
+          autoPlaySpeed={4000}
           arrows={false}
           customButtonGroup={<CarousalButton />}
           renderButtonGroupOutside={true}
