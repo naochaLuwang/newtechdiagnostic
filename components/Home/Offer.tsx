@@ -59,7 +59,7 @@ const Offer = () => {
         </p>
         <div className="w-20 h-[2px] mt-2 bg-blue-700"></div>
       </div>
-      <div className="w-full h-auto px-8 mt-10 md:px-10 md:ml-5 lg:px-16 ">
+      <div className="flex items-center justify-center w-full h-auto px-8 mt-10 md:px-10 md:ml-5 lg:px-16">
         <Carousel
           swipeable={false}
           draggable={false}
