@@ -15,7 +15,7 @@ const CarousalButton = ({ next, previous, ...rest }: any) => {
         <TbSquareChevronsLeft className="w-10 h-10 text-neutral-700" />
       </div>
       <div onClick={() => next()} className="cursor-pointer">
-        <TbSquareChevronsRight className="w-10 h-10 mr-20 text-neutral-700" />
+        <TbSquareChevronsRight className="w-10 h-10 lg:mr-20 text-neutral-700" />
       </div>
     </div>
   );
