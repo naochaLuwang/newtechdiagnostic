@@ -23,11 +23,11 @@ const responsive = {
 };
 const TestProcedures = () => {
   return (
-    <div className="w-full h-auto py-20">
-      <h1 className="text-3xl font-medium text-center text-neutral-600">
+    <div className="w-full h-auto py-10 lg:py-20">
+      <h1 className="text-lg font-medium text-center lg:text-3xl text-neutral-700">
         Popular Test Procedures
       </h1>
-      <p className="text-center">
+      <p className="w-full max-w-sm mx-auto mt-2 text-xs text-center lg:mx-0 lg:max-w-none lg:text-sm">
         Explore Leading Test Procedures for Comprehensive and Accurate Medical
         Diagnosis
       </p>
