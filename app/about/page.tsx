@@ -1,9 +1,12 @@
-import React from "react";
+export const metadata = {
+  title: "About | NewTech Diagnostics",
+};
 
 const AboutPage = () => {
   return (
-    <div className="w-full h-auto py-20 mx-auto max-w-7xl">
-      <div className="grid w-full grid-cols-2 gap-6">
+    <div className="w-full h-auto lg:py-16 lg:px-16">
+      <h1 className="text-2xl font-medium text-neutral-700">ABOUT US</h1>
+      <div className="grid w-full grid-cols-2 gap-6 pb-20 mt-5">
         <div className="flex flex-col space-y-5">
           <p className="text-base leading-relaxed tracking-wider text-justify text-neutral-700">
             <span className="font-semibold text-teal-600">NEW</span>

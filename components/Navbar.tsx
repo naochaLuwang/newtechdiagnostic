@@ -81,7 +81,7 @@ const Navbar = () => {
     {
       id: "4",
       title: "Contact Us",
-      slug: "/about",
+      slug: "/contact",
       order: 3,
 
       isMulti: "NO",

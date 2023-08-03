@@ -1,5 +1,6 @@
 import Banner from "@/components/Home/Banner";
 import Disorder from "@/components/Home/Disorder";
+import EmbedMap from "@/components/Home/EmbedMap";
 import HomeCarousal from "@/components/Home/HomeCarousal";
 import Offer from "@/components/Home/Offer";
 import Statistics from "@/components/Home/Statistics";
@@ -15,6 +16,7 @@ const HomePage = () => {
       <Banner />
       <Disorder />
       <Offer />
+      <EmbedMap />
     </div>
   );
 };

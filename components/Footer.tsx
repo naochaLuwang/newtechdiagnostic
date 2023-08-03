@@ -7,9 +7,9 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div className="w-full   text-white bg-[#222327]  h-auto py-10 ">
-      <div className="grid w-full grid-cols-1 gap-6 px-6 lg:px-16 lg:grid-cols-4">
-        <div className="relative w-56 h-28 ">
-          <Image src="/org/logo.jpg" alt="logo" fill />
+      <div className="grid w-full grid-cols-1 gap-6 px-4 lg:px-16 lg:grid-cols-4">
+        <div className="relative w-40 h-20 lg:w-56 lg:h-28 ">
+          <Image src="/org/logob.png" alt="logo" fill />
           {/* <h1 className="border border-b-[1px] border-transparent w-fit border-b-[#BDBDBF]">
             ABOUT
           </h1>
