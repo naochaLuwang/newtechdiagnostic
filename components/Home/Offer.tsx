@@ -24,7 +24,7 @@ const responsive = {
 
 const Offer = () => {
   return (
-    <div className="w-full h-auto py-20">
+    <div className="w-full h-auto py-10 lg:py-20">
       <div className="flex flex-col items-center">
         <h1 className="text-3xl font-medium text-center text-neutral-700">
           What We Offer

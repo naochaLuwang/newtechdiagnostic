@@ -7,7 +7,7 @@ import React from "react";
 const Statistics: React.FC = () => {
   return (
     <div className="relative z-20 w-full h-auto py-10 bg-teal-600 lg:py-20">
-      <div className="grid w-full grid-cols-1 gap-6 px-4 text-white lg:px-16 lg:grid-cols-3">
+      <div className="grid w-full grid-cols-1 gap-6 px-4 text-white lg:px-16 lg:grid-cols-3 md:px-8">
         <div className="flex items-start space-x-2">
           <div className="flex items-center justify-center flex-shrink-0 bg-white rounded-full lg:w-20 lg:h-20 w-14 h-14 bg-opacity-80">
             <div className="relative w-8 h-8 lg:w-12 lg:h-12">
@@ -20,7 +20,7 @@ const Statistics: React.FC = () => {
             </div>
           </div>
           <div className="flex flex-col pr-4 space-y-2 lg:pr-0">
-            <p className="text-base font-medium lg:text-lg">
+            <p className="text-base font-medium lg:text-lg md:text-lg">
               Advanced Equipment and Modern Infrastructure
             </p>
             <p className="text-sm leading-relaxed tracking-tight text-justify lg:tracking-wider lg:text-start">
@@ -44,7 +44,7 @@ const Statistics: React.FC = () => {
             </div>
           </div>
           <div className="flex flex-col pr-4 space-y-5 lg:pr-0">
-            <p className="text-base font-medium lg:text-lg">
+            <p className="text-base font-medium lg:text-lg md:text-lg">
               Our Commitment to Excellence
             </p>
             <p className="text-sm leading-relaxed tracking-tight text-justify lg:tracking-wider lg:text-start">
@@ -68,7 +68,7 @@ const Statistics: React.FC = () => {
             </div>
           </div>
           <div className="flex flex-col pr-4 space-y-2 lg:pr-0">
-            <p className="text-base font-medium lg:text-lg">
+            <p className="text-base font-medium lg:text-lg md:text-lg">
               Professional Team and Personalized Care
             </p>
             <p className="text-sm leading-relaxed tracking-tight text-justify lg:tracking-wider lg:text-start ">
