@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <div className="relative w-full lg:py-20 py-10 lg:h-96 h-72 bg-[url('/icons/MRIM.jpeg')] bg-no-repeat bg-cover bg-center">
       <div className="absolute inset-0 z-0 bg-indigo-950 opacity-70"></div>
-      <div className="relative z-10 px-4 lg:px-8 md:px-8">
+      <div className="relative z-10 px-4 lg:px-16 md:px-8">
         <h1 className="p-2 text-xs font-semibold text-white bg-blue-400 rounded-md lg:text-base w-fit h-fit">
           NEW
         </h1>

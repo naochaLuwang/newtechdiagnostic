@@ -31,7 +31,7 @@ const TestProcedures = () => {
         Explore Leading Test Procedures for Comprehensive and Accurate Medical
         Diagnosis
       </p>
-      <div className="w-full px-4 mt-10 lg:px-8 md:px-8">
+      <div className="w-full px-4 mt-10 lg:px-16 md:px-8">
         <Carousel
           swipeable={false}
           draggable={false}

@@ -13,7 +13,7 @@ const responsive = {
   tablet: {
     breakpoint: { max: 1024, min: 464 },
     items: 2,
-    slidesToSlide: 2, // optional, default to 1.
+    slidesToSlide: 1, // optional, default to 1.
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
@@ -22,21 +22,44 @@ const responsive = {
   },
 };
 
+const testOffer = [
+  {
+    imageUrl: "Sonography.png",
+    title: "ULTRASOUND",
+  },
+  {
+    imageUrl: "mammography.png",
+    title: "MAMMOGRAPHY",
+  },
+  {
+    imageUrl: "CTS.png",
+    title: "CT SCAN",
+  },
+  {
+    imageUrl: "XRAY.png",
+    title: "DIGITAL-XRAY",
+  },
+  {
+    imageUrl: "laboratory.png",
+    title: "LABORATORY",
+  },
+];
+
 const Offer = () => {
   return (
     <div className="w-full h-auto py-10 lg:py-20">
       <div className="flex flex-col items-center">
-        <h1 className="text-3xl font-medium text-center text-neutral-700">
+        <h1 className="text-xl font-medium text-center md:text-2xl lg:text-3xl text-neutral-700">
           What We Offer
         </h1>
-        <p className="max-w-4xl mx-auto mt-5 text-sm leading-loose text-center">
+        <p className="max-w-md px-2 mx-auto mt-5 text-xs text-center lg:px-0 md:text-sm lg:leading-loose lg:text-sm lg:max-w-4xl md:max-w-xl">
           Explore our comprehensive array of radiology services, encompassing
           advanced modalities such as Computed Tomography (CT), Diagnostic
           Radiology (X-Ray), Magnetic Resonance Imaging (MRI), and Ultrasound.
         </p>
         <div className="w-20 h-[2px] mt-2 bg-blue-700"></div>
       </div>
-      <div className="w-full h-auto mx-auto mt-10 max-w-7xl">
+      <div className="w-full h-auto px-8 mt-10 md:px-10 md:ml-5 lg:px-16 ">
         <Carousel
           swipeable={false}
           draggable={false}
@@ -49,27 +72,33 @@ const Offer = () => {
           arrows={false}
           keyBoardControl={true}
         >
-          <div className="flex flex-col items-center justify-center ml-5 border-2 border-teal-700 rounded-md w-72 h-72">
-            <div className="relative w-52 h-52">
-              <Image
-                src="/icons/sonography.png"
-                alt="Mammography"
-                fill
-                style={{ objectFit: "cover" }}
-              />
+          {testOffer.map((test) => (
+            <div
+              className="flex flex-col items-center justify-center w-64 h-64 ml-5 border-2 border-teal-700 rounded-md lg:w-72 lg:h-72"
+              key={test.title}
+            >
+              <div className="relative w-52 h-52">
+                <Image
+                  src={`/icons/${test.imageUrl}`}
+                  alt={test.imageUrl}
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <h1 className="font-medium tracking-wide">{test.title}</h1>
             </div>
-            <h1 className="font-medium tracking-wide">ULTRASOUND</h1>
-          </div>
-          <div className="flex flex-col items-center justify-center ml-5 space-y-2 border-2 border-teal-700 rounded-md w-72 h-72">
+          ))}
+
+          {/* <div className="flex flex-col items-center justify-center w-64 h-64 ml-5 space-y-2 border-2 border-teal-700 rounded-md lg:w-72 lg:h-72">
             <div className="relative w-48 h-48">
-              <Image src="/icons/mammography.png" alt="Mammography" fill />
+              <Image src="/icons/" alt="Mammography" fill />
             </div>
             <h1 className="font-medium tracking-wide">MAMMOGRAPHY</h1>
           </div>
           <div className="flex flex-col items-center justify-center ml-5 space-y-2 border-2 border-teal-700 rounded-md w-72 h-72">
             <div className="relative w-48 h-48">
               <Image
-                src="/icons/CTS.png"
+                src="/icons/"
                 alt="Mammography"
                 fill
                 style={{ objectFit: "cover" }}
@@ -92,14 +121,14 @@ const Offer = () => {
           <div className="flex flex-col items-center justify-center ml-5 space-y-2 border-2 border-teal-700 rounded-md w-72 h-72">
             <div className="relative w-48 h-48">
               <Image
-                src="/icons/laboratory.png"
+                src="/icons/"
                 alt="Laboratory"
                 fill
                 style={{ objectFit: "cover" }}
               />
             </div>
             <h1 className="font-medium tracking-wide">LABORATORY</h1>
-          </div>
+          </div> */}
         </Carousel>
       </div>
     </div>
