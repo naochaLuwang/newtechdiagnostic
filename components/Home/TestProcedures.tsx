@@ -31,7 +31,7 @@ const TestProcedures = () => {
         Explore Leading Test Procedures for Comprehensive and Accurate Medical
         Diagnosis
       </p>
-      <div className="w-full mx-auto mt-10 max-w-7xl">
+      <div className="w-full px-4 mt-10 lg:px-8">
         <Carousel
           swipeable={false}
           draggable={false}
@@ -44,13 +44,13 @@ const TestProcedures = () => {
         >
           <div className="relative flex flex-col px-10 py-10 overflow-hidden border border-neutral-300 rounded-xl">
             <div className="absolute top-0 w-56 h-56 -rotate-90 bg-blue-200 rounded-l-full bg-opacity-30 -right-20"></div>
-            <h1 className="text-3xl font-medium leading-relaxed text-teal-600">
+            <h1 className="text-lg font-medium leading-relaxed text-teal-600 lg:text-3xl">
               Congenital Anomaly Scan
             </h1>
-            <p className="text-lg font-medium text-orange-600">
+            <p className="text-sm font-medium text-orange-600 lg:text-lg">
               Secure your baby&apos;s future
             </p>
-            <ul className="px-4 mt-3 space-y-2 text-base tracking-wide text-neutral-700">
+            <ul className="px-2 mt-3 space-y-2 text-xs tracking-wide lg:px-4 lg:text-base text-neutral-900">
               <li className="list-disc ">
                 Detect issues early, ensure peace of mind.
               </li>
@@ -67,7 +67,7 @@ const TestProcedures = () => {
                 well-being, and embrace the joy of parenthood with confidence.
               </li>
             </ul>
-            <p className="mt-5 text-base font-medium tracking-wide text-indigo-800">
+            <p className="mt-3 text-xs font-medium tracking-normal text-indigo-900 lg:mt-5 lg:tracking-wide lg:text-base">
               Grab this crucial scan without an appointment and enjoy a
               worry-free pregnancy journey.
             </p>

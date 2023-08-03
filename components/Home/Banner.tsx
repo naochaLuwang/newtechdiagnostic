@@ -2,10 +2,10 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <div className="relative w-full py-20 h-96 bg-[url('/icons/MRIM.jpeg')] bg-no-repeat bg-cover bg-center">
+    <div className="relative w-full lg:py-20 py-10 h-96 bg-[url('/icons/MRIM.jpeg')] bg-no-repeat bg-cover bg-center">
       <div className="absolute inset-0 z-0 bg-indigo-950 opacity-70"></div>
-      <div className="relative z-10 mx-auto max-w-7xl">
-        <h1 className="p-2 font-semibold text-white bg-blue-400 rounded-md w-fit h-fit">
+      <div className="relative z-10 px-4 lg:px-8">
+        <h1 className="p-2 text-xs font-semibold text-white bg-blue-400 rounded-md lg:text-base w-fit h-fit">
           NEW
         </h1>
         <h1 className="mt-5 text-4xl font-bold leading-normal text-white">

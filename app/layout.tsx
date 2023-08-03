@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Heading from "@/components/Home/Heading";
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/react";
+import MobileHeader from "@/components/Home/MobileHeader";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className={`${poppins.className} scrollbar-hide `}>
         <Heading />
         <Header />
+        <MobileHeader />
 
         <div className="flex flex-col w-full overflow-hidden h-fit ">
           {children}
