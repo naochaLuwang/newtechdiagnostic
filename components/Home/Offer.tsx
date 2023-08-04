@@ -88,47 +88,6 @@ const Offer = () => {
               <h1 className="font-medium tracking-wide">{test.title}</h1>
             </div>
           ))}
-
-          {/* <div className="flex flex-col items-center justify-center w-64 h-64 ml-5 space-y-2 border-2 border-teal-700 rounded-md lg:w-72 lg:h-72">
-            <div className="relative w-48 h-48">
-              <Image src="/icons/" alt="Mammography" fill />
-            </div>
-            <h1 className="font-medium tracking-wide">MAMMOGRAPHY</h1>
-          </div>
-          <div className="flex flex-col items-center justify-center ml-5 space-y-2 border-2 border-teal-700 rounded-md w-72 h-72">
-            <div className="relative w-48 h-48">
-              <Image
-                src="/icons/"
-                alt="Mammography"
-                fill
-                style={{ objectFit: "cover" }}
-              />
-            </div>
-            <h1 className="font-medium tracking-wide">CT SCAN</h1>
-          </div>
-          <div className="flex flex-col items-center justify-center ml-5 space-y-2 border-2 border-teal-700 rounded-md w-72 h-72">
-            <div className="relative w-48 h-48">
-              <Image
-                src="/icons/XRAY.png"
-                alt="xray"
-                fill
-                style={{ objectFit: "cover" }}
-              />
-            </div>
-            <h1 className="font-medium tracking-wide">DIGITAL X-RAY</h1>
-          </div>
-
-          <div className="flex flex-col items-center justify-center ml-5 space-y-2 border-2 border-teal-700 rounded-md w-72 h-72">
-            <div className="relative w-48 h-48">
-              <Image
-                src="/icons/"
-                alt="Laboratory"
-                fill
-                style={{ objectFit: "cover" }}
-              />
-            </div>
-            <h1 className="font-medium tracking-wide">LABORATORY</h1>
-          </div> */}
         </Carousel>
       </div>
     </div>

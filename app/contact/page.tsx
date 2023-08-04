@@ -1,4 +1,7 @@
 "use client";
+
+import { BsPhoneFill } from "react-icons/bs";
+
 const ContactPage = () => {
   return (
     <div className="flex w-full h-auto space-x-8 lg:py-16 lg:px-16">
@@ -12,8 +15,12 @@ const ContactPage = () => {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-      <div className="flex flex-col">
+      <div className="flex flex-col space-y-5">
         <h1 className="text-3xl font-medium">Contact Us</h1>
+        <div className="flex items-center space-x-2">
+          <BsPhoneFill className="w-6 h-6 text-blue-300" />
+          <p>8132043928</p>
+        </div>
       </div>
     </div>
   );
