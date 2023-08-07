@@ -5,6 +5,7 @@ import Heading from "@/components/Home/Heading";
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/react";
 import MobileHeader from "@/components/Home/MobileHeader";
+import ScrollToTopButton from "@/components/ScrollTop";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
@@ -33,6 +34,7 @@ export default function RootLayout({
           {children}
         </div>
         <Footer />
+        <ScrollToTopButton />
         <Analytics />
       </body>
     </html>

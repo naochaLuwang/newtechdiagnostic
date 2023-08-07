@@ -8,12 +8,12 @@ const Heading = () => {
       <div className="flex items-center justify-between h-full px-4 text-white md:px-8 lg:px-16">
         <div className="flex items-center space-x-2">
           <BsPhoneFill className="h-6 lg:h-8" />
-          <p className="text-xs lg:text-base">8132043928</p>
+          <p className="text-xs lg:text-base">7005983372</p>
         </div>
 
         <div className="flex items-center space-x-2">
           <IoMdMail className="h-6 lg:h-8" />
-          <p className="text-xs lg:text-base">info@newtechdiagnostic.in</p>
+          <p className="text-xs lg:text-base">contact@newtechdiagnostics.com</p>
         </div>
       </div>
     </div>

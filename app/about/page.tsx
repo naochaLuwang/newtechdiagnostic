@@ -1,12 +1,14 @@
+import Image from "next/image";
+
 export const metadata = {
   title: "About | NewTech Diagnostics",
 };
 
 const AboutPage = () => {
   return (
-    <div className="w-full h-auto lg:py-16 lg:px-16">
+    <div className="w-full h-auto lg:py-16 lg:px-16 bg-indigo-50 bg-opacity-60">
       <h1 className="text-2xl font-medium text-neutral-700">ABOUT US</h1>
-      <div className="grid w-full grid-cols-2 gap-6 pb-20 mt-5">
+      <div className="grid w-full grid-cols-2 gap-10 pb-20 mt-5">
         <div className="flex flex-col space-y-5">
           <p className="text-base leading-relaxed tracking-wider text-justify text-neutral-700">
             <span className="font-semibold text-teal-600">NEW</span>
@@ -34,6 +36,15 @@ const AboutPage = () => {
             the efficacy of treatments and enhance overall treatment outcomes,
             especially when early diagnosis is achieved.
           </p>
+        </div>
+
+        <div className="relative w-full h-30rem">
+          <Image
+            src="/org/newtech.jpeg"
+            fill
+            alt="newtech"
+            className="rounded-xl"
+          />
         </div>
       </div>
     </div>
