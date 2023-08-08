@@ -33,7 +33,7 @@ const ContactPage = () => {
       </div>
       <div className="border rounded-lg shadow-lg">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229.82949424026847!2d93.95878611395906!3d24.811365096828588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3749271b68911777%3A0x16feda7a65581a4b!2sRX65%2BGGC%2C%20Ayangpalli%20Rd%2C%20near%20JNIMS%20Road%2C%20Soibam%20Leikai%2C%20Imphal%2C%20Lairikyengbam%20Leikai%2C%20Manipur%20795010!5e0!3m2!1sen!2sin!4v1691084801767!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.5371357515205!2d93.95617977574516!3d24.81129827796132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3749273d2d677077%3A0x5494cbfcd3806ea1!2sNewtech%20Diagnostics!5e0!3m2!1sen!2sin!4v1691487842866!5m2!1sen!2sin"
           width="700"
           height="450"
           style={{ border: 0 }}

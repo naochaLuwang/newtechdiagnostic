@@ -100,7 +100,7 @@ const Navbar = () => {
                 <div key={navlink.id}>
                   {navlink.sublinks.length > 0 ? (
                     <NavigationMenuItem>
-                      <NavigationMenuTrigger className="text-base text-neutral-800">
+                      <NavigationMenuTrigger className=" text-neutral-800">
                         {navlink.title}
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
