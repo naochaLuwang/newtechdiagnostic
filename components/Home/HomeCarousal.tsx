@@ -103,16 +103,7 @@ const HomeCarousal = () => {
             <Skeleton className="w-[400px] h-[30px] mt-5 rounded-md  " />
             <Skeleton className="w-[400px] h-[30px] mt-5 rounded-md  " />
           </div>
-          {/* <div className="w-[55rem] h-full rounded-lg">
-            <video
-              className="rounded-lg"
-              src="/icons/volusiona.mp4"
-              height="100%"
-              autoPlay
-              muted
-              loop
-            ></video>
-          </div> */}
+
           <Skeleton className="w-[55rem] h-80 rounded-xl" />
         </div>
       )}
