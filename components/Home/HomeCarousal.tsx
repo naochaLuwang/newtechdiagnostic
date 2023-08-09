@@ -4,6 +4,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { useState, useEffect } from "react";
 import { Skeleton } from "@/components/ui/skeleton";
+import HomeCarousalButton from "./HomeCarousalButton";
 
 const responsive = {
   desktop: {
@@ -45,6 +46,8 @@ const HomeCarousal = () => {
           autoPlay={true}
           autoPlaySpeed={10000}
           arrows={false}
+          customButtonGroup={<HomeCarousalButton />}
+          renderButtonGroupOutside={true}
         >
           <div className="flex w-full h-full pt-10 pb-5">
             <div className="flex flex-col flex-shrink-0 px-16 py-12">

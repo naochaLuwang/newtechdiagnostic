@@ -44,6 +44,7 @@ const AboutPage = () => {
             fill
             alt="newtech"
             className="rounded-xl"
+            priority={true}
           />
         </div>
       </div>

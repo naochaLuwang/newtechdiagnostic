@@ -55,7 +55,9 @@ const TestProcedures = () => {
           >
             <div className="relative flex flex-col px-10 py-10 overflow-hidden border border-neutral-300 rounded-xl">
               <div className="absolute top-0 w-56 h-56 -rotate-90 bg-blue-200 rounded-l-full bg-opacity-30 -right-20"></div>
-              <h1>Popular</h1>
+              <h1 className="p-1 text-xs font-medium tracking-wide text-white bg-teal-700 border rounded-sm w-fit h-fit">
+                Popular
+              </h1>
               <h1 className="text-lg font-medium leading-relaxed text-teal-600 lg:text-3xl">
                 Congenital Anomaly Scan
               </h1>

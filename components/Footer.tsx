@@ -1,8 +1,9 @@
 import React from "react";
 import Link from "next/link";
-import { IoMail } from "react-icons/io5";
+import { IoLocation, IoMail } from "react-icons/io5";
 import { BsTelephoneFill } from "react-icons/bs";
 import Image from "next/image";
+import { HiMail } from "react-icons/hi";
 
 const Footer = () => {
   return (
@@ -10,17 +11,6 @@ const Footer = () => {
       <div className="grid w-full grid-cols-1 gap-6 px-4 lg:px-16 lg:grid-cols-4">
         <div className="relative w-40 h-20 lg:w-56 lg:h-28 ">
           <Image src="/org/logob.png" alt="logo" fill />
-          {/* <h1 className="border border-b-[1px] border-transparent w-fit border-b-[#BDBDBF]">
-            ABOUT
-          </h1>
-          <p className="mt-5 text-sm line-clamp-4 text-[#BDBDBF]">
-            We are a Centre for Advanced Urology & Kidney Diseases is the only
-            centre in entire North-Eastern Region of India dedicated only for
-            Urological Problems. With the use of Most Advanced Laser Machines
-          </p>
-          <p className="mt-2 text-sm text-[#BDBDBF] hover:text-white">
-            read more
-          </p> */}
         </div>
 
         <div className="flex flex-col lg:pl-14">
@@ -65,14 +55,21 @@ const Footer = () => {
           <div className="flex items-center mt-5 space-x-2">
             <BsTelephoneFill className="w-4 h-4 text-white" />
             <p className="text-sm text-[#BDBDBF] hover:text-white">
-              +91 9864104444
+              7005983372
             </p>
           </div>
 
           <div className="flex items-center mt-2 space-x-2">
-            <BsTelephoneFill className="w-4 h-4 text-white" />
+            <HiMail className="w-4 h-4 text-white" />
             <p className="text-sm text-[#BDBDBF] hover:text-white">
-              +91 882272671
+              contact@newtechdiagnostics.com
+            </p>
+          </div>
+          <div className="flex items-start mt-2 space-x-2">
+            <IoLocation className="flex-shrink-0 w-4 h-4 text-white" />
+            <p className="text-sm text-[#BDBDBF] hover:text-white">
+              Soibam Leikai Ayangpalli Rd. near JNIMS Gate, adjacent to PNB,
+              Porompat, Imphal
             </p>
           </div>
         </div>
