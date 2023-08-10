@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/react";
 import MobileHeader from "@/components/Home/MobileHeader";
 import ScrollToTopButton from "@/components/ScrollTop";
+import ClientComponent from "@/components/ClientComponent";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
@@ -27,7 +28,10 @@ export default function RootLayout({
     <html lang="en" style={{ scrollBehavior: "smooth" }}>
       <body className={`${poppins.className} scrollbar-hide `}>
         <Heading />
-        <Header />
+        <ClientComponent>
+          <Header />
+        </ClientComponent>
+
         <MobileHeader />
 
         <div className="flex flex-col w-full overflow-hidden h-fit ">

@@ -27,6 +27,10 @@ const responsive = {
 const HomeCarousal = () => {
   const [loading, setLoading] = useState(true);
 
+  const [isMounted, setIsMounted] = useState(false);
+
+  // This is a side effect that runs after the first render and sets the isMounted state to true
+
   useEffect(() => {
     if (!Carousel) {
       setLoading(false);
@@ -34,6 +38,13 @@ const HomeCarousal = () => {
       setLoading(false);
     }
   }, [loading]);
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handleLoadedData = () => {
+    setIsLoading(false);
+  };
+
   return (
     <div className="relative w-full lg:h-auto h-80">
       {!loading ? (
@@ -49,7 +60,7 @@ const HomeCarousal = () => {
           customButtonGroup={<HomeCarousalButton />}
           renderButtonGroupOutside={true}
         >
-          <div className="flex w-full h-full pt-10 pb-5">
+          <div className="flex w-full h-full pt-10">
             <div className="flex flex-col flex-shrink-0 px-16 py-12">
               <h1 className="text-lg font-medium md:text-2xl lg:leading-relaxed lg:text-4xl text-neutral-600">
                 <span className="text-indigo-800">
@@ -62,7 +73,8 @@ const HomeCarousal = () => {
                 in North East India. <br /> Experience Accurate Diagnosis Today!
               </p>
             </div>
-            <div className="w-[55rem] h-full rounded-lg">
+            <div className="w-[60rem] h-full rounded-lg">
+              {isLoading && <Skeleton className="w-[60rem] h-full" />}
               <video
                 className="rounded-lg"
                 src="/icons/volusiona.mp4"
@@ -70,6 +82,7 @@ const HomeCarousal = () => {
                 autoPlay
                 muted
                 loop
+                onLoadedData={handleLoadedData}
               ></video>
             </div>
           </div>

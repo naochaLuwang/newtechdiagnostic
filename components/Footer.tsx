@@ -9,8 +9,19 @@ const Footer = () => {
   return (
     <div className="w-full   text-white bg-[#222327]  h-auto py-10 ">
       <div className="grid w-full grid-cols-1 gap-6 px-4 lg:px-16 lg:grid-cols-4">
-        <div className="relative w-40 h-20 lg:w-56 lg:h-28 ">
-          <Image src="/org/logob.png" alt="logo" fill />
+        <div className="col-span-2">
+          <div className="relative w-40 h-20 lg:w-52 lg:h-28 -left-5">
+            <Image src="/org/logob.png" alt="logo" fill />
+          </div>
+          <p className="text-xs">
+            Elevate your health with NEWTECH Diagnostics – your trusted
+            destination for accurate, comprehensive diagnostics. Offering a wide
+            range of services, including specialized Pathology, we prioritize
+            precision, safety, and affordability. Our advanced technology,
+            expert team, and collaboration with clinicians ensure optimal
+            treatment outcomes. Experience excellence in diagnostics with
+            NEWTECH.
+          </p>
         </div>
 
         <div className="flex flex-col lg:pl-14">
@@ -30,22 +41,6 @@ const Footer = () => {
               NEPHROLOGY
             </p>
           </Link>
-        </div>
-
-        <div className="flex flex-col">
-          <h1 className="border border-b-[1px] border-transparent w-fit border-b-[#BDBDBF]">
-            GET IN TOUCH
-          </h1>
-          <div className="flex items-center mt-5 space-x-2 text-sm text-white">
-            <span>
-              <IoMail className="w-6 h-6 mr-2 text-white" />
-            </span>{" "}
-            Support available for 24/7
-          </div>
-
-          <p className="mt-3 text-[#BDBDBF] hover:text-white">
-            aukd.assam@gmail.com
-          </p>
         </div>
 
         <div className="flex flex-col">
