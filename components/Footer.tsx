@@ -71,7 +71,7 @@ const Footer = () => {
       </div>
       <div className="w-full lg:h-10 py-1 lg:py-0 h-auto flex border-[1px] border-transparent border-opacity-80 border-y-[#BDBDBF] mt-14 items-center text-sm space-x-2 px-16 text-[#BDBDBF] justify-center lg:justify-start">
         <h1 className="text-center lg:text-start">
-          Copyright &copy; 2023{" "}
+          Copyright &copy; 2023.
           <span>
             <Link href="/" className="text-white">
               NewTech Diagnostic.

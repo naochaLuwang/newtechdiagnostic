@@ -1,8 +1,7 @@
 "use client";
-
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { motion, Variants } from "framer-motion";
+import { motion, Variants, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import Navbar from "./Navbar";
@@ -16,7 +15,7 @@ const Header: React.FC = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.pageYOffset;
-      if (scrollPosition > 0) {
+      if (scrollPosition > 120) {
         setIsSticky(true);
       } else {
         setIsSticky(false);
@@ -31,8 +30,8 @@ const Header: React.FC = () => {
   }, []);
 
   const headerVariants: Variants = {
-    initial: { height: "6rem" },
-    sticky: { height: "5rem" },
+    initial: { top: "-6rem" },
+    sticky: { top: "0rem" },
   };
 
   const textVariants: Variants = {
@@ -47,12 +46,15 @@ const Header: React.FC = () => {
 
   return (
     <motion.div
-      className={`z-50 items-center hidden lg:flex w-full  shadow-sm h-24 py-6 ${
-        !isSticky ? "transition-all duration-300 ease-in-out" : "fixed top-0"
-      } ${pathName === "/" && !isSticky ? "bg-white" : "bg-white"}`}
+      className={`z-50 items-center hidden lg:flex w-full  h-24 py-6 ${
+        !isSticky
+          ? "transition-all duration-200 ease-linear shadow-sm"
+          : "fixed top-0 transition-all duration-200 ease-linear shadow-sm"
+      } ${pathName === "/" && !isSticky ? "bg-white " : "bg-white"}`}
       variants={headerVariants}
       initial="initial"
       animate={isSticky ? "sticky" : "initial"}
+      exit={{ top: "-6rem" }}
     >
       <div className="flex items-center justify-between w-full px-10 mx-auto ">
         <div className="flex items-center w-full">
@@ -60,8 +62,8 @@ const Header: React.FC = () => {
             <div
               className={`relative w-56 ${
                 isSticky
-                  ? "h-24 transition-all duration-100 ease-in-out"
-                  : "h-28 transition-all duration-100 ease-in-out"
+                  ? "h-20 transition-all duration-100 ease-in-out"
+                  : "h-24 transition-all duration-100 ease-in-out"
               }`}
             >
               <Image
