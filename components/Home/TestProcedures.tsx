@@ -41,7 +41,7 @@ const TestProcedures = () => {
         Explore Leading Test Procedures for Comprehensive and Accurate Medical
         Diagnosis
       </p>
-      <div className="w-full h-auto px-4 mt-10 lg:max-w-7xl lg:mx-auto md:px-8">
+      <div className="w-full h-auto px-4 mx-0 mt-10 lg:max-w-7xl lg:mx-auto md:px-8">
         {!loading ? (
           <Carousel
             swipeable={false}
@@ -53,7 +53,7 @@ const TestProcedures = () => {
             autoPlaySpeed={7000}
             arrows={false}
           >
-            <div className="relative flex flex-col px-10 py-10 overflow-hidden border border-neutral-300 rounded-xl w-[36rem]">
+            <div className="relative flex flex-col h-auto px-10 py-10 overflow-hidden border border-neutral-300 rounded-xl lg:w-[36rem] w-full">
               <div className="absolute top-0 w-56 h-56 -rotate-90 bg-blue-200 rounded-l-full bg-opacity-30 -right-20"></div>
               <h1 className="p-1 text-xs font-medium tracking-wide text-white bg-teal-700 border rounded-sm w-fit h-fit">
                 Popular
@@ -87,7 +87,7 @@ const TestProcedures = () => {
               </p>
             </div>
 
-            <div className="relative flex flex-col px-10 py-10 overflow-hidden border border-neutral-300 rounded-xl w-[36rem]">
+            <div className="relative flex flex-col px-10 py-10 overflow-hidden border border-neutral-300 rounded-xl lg:w-[36rem] w-full">
               <div className="absolute top-0 w-56 h-56 -rotate-90 bg-blue-200 rounded-l-full bg-opacity-30 -right-20"></div>
               <h1 className="p-1 text-xs font-medium tracking-wide text-white bg-teal-700 border rounded-sm w-fit h-fit">
                 Popular
