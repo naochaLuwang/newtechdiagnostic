@@ -5,6 +5,7 @@ import { motion, Variants, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import Navbar from "./Navbar";
+import { BsFillTelephoneFill } from "react-icons/bs";
 
 const Header: React.FC = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -56,7 +57,7 @@ const Header: React.FC = () => {
       animate={isSticky ? "sticky" : "initial"}
       exit={{ top: "-6rem" }}
     >
-      <div className="flex items-center justify-between w-full px-10 mx-auto ">
+      <div className="flex items-center justify-between w-full px-10 mx-auto  max-w-[90rem]  ">
         <div className="flex items-center w-full">
           <Link href="/">
             <div
@@ -78,6 +79,26 @@ const Header: React.FC = () => {
         </div>
 
         <Navbar />
+
+        {/* <div className="flex items-center justify-end w-full h-auto space-x-5 ">
+          <div className="flex flex-col h-auto w-fit">
+            <div className="px-4 py-2 border border-teal-700 rounded-md w-fit">
+              <h1>HOME COLLECTION</h1>
+              <div className="flex items-center space-x-2">
+                <BsFillTelephoneFill className="w-4 h-4" />
+                <p>8132043928</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p>DOWNLOAD REPORT</p>
+          </div>
+        </div> */}
+
+        <div className="flex items-center justify-center py-2 bg-red-200 w-96">
+          TEST REPORT
+        </div>
       </div>
     </motion.div>
   );

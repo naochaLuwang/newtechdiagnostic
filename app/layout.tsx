@@ -8,7 +8,7 @@ import MobileHeader from "@/components/Home/MobileHeader";
 import ScrollToTopButton from "@/components/ScrollTop";
 import ClientComponent from "@/components/ClientComponent";
 
-const poppins = Poppins({
+const quicksand = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
   subsets: ["latin"],
 });
@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" style={{ scrollBehavior: "smooth" }}>
-      <body className={`${poppins.className} scrollbar-hide `}>
+      <body className={`${quicksand.className} scrollbar-hide `}>
         <Heading />
         <ClientComponent>
           <Header />

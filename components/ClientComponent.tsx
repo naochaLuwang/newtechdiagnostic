@@ -13,7 +13,7 @@ const ClientComponent = ({ children }: { children: React.ReactNode }) => {
 
   // This is a conditional rendering that returns null if the component is not mounted yet
   if (!isMounted) {
-    return <Skeleton className="w-full h-24" />;
+    return <Skeleton className="hidden w-full h-24 lg:block" />;
   }
 
   return <> {children}</>;

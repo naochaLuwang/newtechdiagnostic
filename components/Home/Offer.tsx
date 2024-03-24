@@ -12,7 +12,7 @@ const responsive = {
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
-    items: 2,
+    items: 3,
     slidesToSlide: 1, // optional, default to 1.
   },
   mobile: {
@@ -49,7 +49,7 @@ const Offer = () => {
   return (
     <div className="w-full h-auto py-10 lg:py-20">
       <div className="flex flex-col items-center">
-        <h1 className="text-xl font-medium text-center md:text-2xl lg:text-3xl text-neutral-700">
+        <h1 className="text-xl font-medium md:text-2xl lg:text-3xl text-neutral-700">
           What We Offer
         </h1>
         <p className="max-w-md px-2 mx-auto mt-5 text-xs text-center lg:px-0 md:text-sm lg:leading-loose lg:text-sm lg:max-w-4xl md:max-w-xl">

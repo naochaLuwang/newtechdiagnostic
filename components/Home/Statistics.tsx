@@ -7,6 +7,7 @@ import React from "react";
 const Statistics: React.FC = () => {
   return (
     <div className="relative z-20 w-full h-auto py-10 bg-teal-600 lg:py-20 ">
+      <h1 className="text-white lg:px-16">Why People Trust Us</h1>
       <div className="grid w-full grid-cols-1 gap-6 px-4 text-white lg:px-16 lg:grid-cols-3 md:px-8">
         <div className="flex items-start space-x-2">
           <div className="flex items-center justify-center flex-shrink-0 bg-white rounded-full lg:w-20 lg:h-20 w-14 h-14 bg-opacity-80">

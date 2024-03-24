@@ -1,4 +1,5 @@
 import ClientsTestimonial from "@/components/ClientsTestimonial";
+import ContactDetail from "@/components/ContactDetail";
 
 export default function AboutLayout({
   children,
@@ -8,7 +9,7 @@ export default function AboutLayout({
   return (
     <>
       {children}
-      <ClientsTestimonial />
+      <ContactDetail />
     </>
   );
 }

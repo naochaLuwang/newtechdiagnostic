@@ -57,8 +57,8 @@ const HomeCarousal = () => {
           autoPlay={true}
           autoPlaySpeed={10000}
           arrows={false}
-          customButtonGroup={<HomeCarousalButton />}
-          renderButtonGroupOutside={true}
+          // customButtonGroup={<HomeCarousalButton />}
+          // renderButtonGroupOutside={true}
         >
           <div className="flex w-full h-full pt-10">
             <div className="flex flex-col flex-shrink-0 px-16 py-12">

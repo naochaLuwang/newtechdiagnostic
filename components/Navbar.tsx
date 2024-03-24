@@ -61,8 +61,8 @@ const Navbar = () => {
     },
     {
       id: "3",
-      title: "Services",
-      slug: "/services",
+      title: "Departments",
+      slug: "/departments",
       order: 2,
 
       isMulti: "NO",
@@ -71,10 +71,18 @@ const Navbar = () => {
         {
           id: "1",
 
-          title: "EEG",
-          subtitle: "",
-          slug: "eeg",
+          title: "ULTRASOUND",
+          subtitle: "Explore wide ranges of ultrasound",
+          slug: "/ultrasound",
           order: 1,
+        },
+        {
+          id: "2",
+
+          title: "DIGITAL XRAY",
+          subtitle: "Explore wide ranges of ultrasound",
+          slug: "/digital-xray",
+          order: 2,
         },
       ],
     },
@@ -108,7 +116,7 @@ const Navbar = () => {
                           className={`grid w-[350px] gap-3 p-2  ${
                             navlink.isMulti === "YES"
                               ? "w-[200px] md:grid-cols-2"
-                              : "grid-cols-1 md:w-[200px]"
+                              : "grid-cols-1 md:w-[400px]"
                           }   `}
                         >
                           {navlink.sublinks

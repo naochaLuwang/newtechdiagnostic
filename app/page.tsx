@@ -11,11 +11,13 @@ const HomePage = () => {
   return (
     <div className="w-full h-auto">
       <HomeCarousal />
-      <Statistics />
       <TestProcedures />
+      <Statistics />
+      <Offer />
+
       <Banner />
       <Disorder />
-      <Offer />
+
       <EmbedMap />
     </div>
   );
