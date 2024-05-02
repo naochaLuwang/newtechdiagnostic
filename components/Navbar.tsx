@@ -81,8 +81,16 @@ const Navbar = () => {
 
           title: "DIGITAL XRAY",
           subtitle: "Explore wide ranges of ultrasound",
-          slug: "/digital-xray",
+          slug: "/x-ray",
           order: 2,
+        },
+        {
+          id: "3",
+
+          title: "CARDIOLOGY",
+          subtitle: "Explore wide ranges of ultrasound",
+          slug: "/cardiology",
+          order: 3,
         },
       ],
     },

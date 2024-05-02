@@ -96,8 +96,8 @@ const Header: React.FC = () => {
           </div>
         </div> */}
 
-        <div className="flex items-center justify-center py-2 bg-red-200 w-96">
-          TEST REPORT
+        <div className="flex items-center justify-center py-2 bg-red-200 rounded-lg w-96">
+          <h1 className="text-base font-medium tracking-wide">TEST REPORT</h1>
         </div>
       </div>
     </motion.div>

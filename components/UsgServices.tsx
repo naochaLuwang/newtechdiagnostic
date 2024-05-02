@@ -19,7 +19,7 @@ export function TabsDemo() {
           <div className="grid grid-cols-4 gap-6 mt-5 text-base font-medium tracking-wide">
             <p>USG WHOLE ABDOMEN</p>
             <p>USG UPPER ABDOMEN</p>
-            <p>usg LOWER ABDOMEN</p>
+            <p>USG LOWER ABDOMEN</p>
             <p>USG LIVER</p>
             <p>USG PANCREAS</p>
             <p>USG KIDNEYS</p>
