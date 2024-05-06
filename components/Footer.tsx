@@ -8,7 +8,7 @@ import { HiMail } from "react-icons/hi";
 const Footer = () => {
   return (
     <div className="w-full   text-white bg-[#222327]  h-auto py-10 ">
-      <div className="grid w-full grid-cols-1 gap-6 px-4 lg:px-16 lg:grid-cols-4">
+      <div className="grid w-full grid-cols-1 gap-6 px-4 lg:px-16 lg:grid-cols-3">
         <div className="lg:col-span-2">
           <div className="relative w-40 h-20 lg:w-52 lg:h-28 -left-5">
             <Image src="/org/logob.png" alt="logo" fill />
@@ -24,7 +24,7 @@ const Footer = () => {
           </p>
         </div>
 
-        <div className="flex flex-col lg:pl-14">
+        {/* <div className="flex flex-col lg:pl-14">
           <h1 className="border border-b-[1px] border-transparent w-fit border-b-[#BDBDBF]">
             Department
           </h1>
@@ -41,7 +41,7 @@ const Footer = () => {
               NEPHROLOGY
             </p>
           </Link>
-        </div>
+        </div> */}
 
         <div className="flex flex-col">
           <h1 className="border border-b-[1px] border-transparent w-fit border-b-[#BDBDBF]">

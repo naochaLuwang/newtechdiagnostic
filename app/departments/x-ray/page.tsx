@@ -1,3 +1,5 @@
+import { TabsDemo } from "@/components/UsgServices";
+import { XrayServices } from "@/components/XrayServices";
 import React from "react";
 
 const XRAY = () => {
@@ -40,32 +42,35 @@ const XRAY = () => {
         <div className="flex flex-col space-y-2">
           <h1 className="text-lg">Expertise</h1>
           <p className="text-base font-light ">
-            Our team of radiologists and sonographers are highly experienced in
-            performing ultrasound scans and interpreting results accurately.
+            Our team of skilled radiologists and technicians excels in
+            conducting X-ray examinations and interpreting results accurately.
           </p>
         </div>
 
         <div className="flex flex-col space-y-2">
           <h1 className="text-lg">Advanced Technology</h1>
           <p className="text-base font-light ">
-            We use the latest ultrasound equipment to ensure high-quality images
-            and precise diagnostics.
+            We pride ourselves on utilizing the latest advancements in X-ray
+            equipment, ensuring top-notch image quality and precise diagnostic
+            capabilities.
           </p>
         </div>
 
         <div className="flex flex-col space-y-2">
           <h1 className="text-lg">Patient Comfort</h1>
           <p className="text-base font-light">
-            We prioritize patient comfort and strive to create a relaxed and
-            welcoming environment during the ultrasound procedure.
+            Your comfort matters to us. We strive to create a welcoming and
+            relaxed environment during every X-ray procedure, because your peace
+            of mind is our priority.
           </p>
         </div>
 
         <div className="flex flex-col space-y-2">
           <h1 className="text-lg">Quick Results</h1>
           <p className="text-base font-light">
-            We understand the importance of timely results, and we strive to
-            provide quick turnaround times for our ultrasound reports.
+            We understand the importance of timely information. That&apos;s why
+            we&apos;re dedicated to providing quick turnaround times for all
+            X-ray reports, delivering efficiency without compromising accuracy.
           </p>
         </div>
       </div>
@@ -75,7 +80,7 @@ const XRAY = () => {
       </div> */}
 
       <h1 className="mt-20 text-3xl">OUR SERVICES</h1>
-      {/* <TabsDemo /> */}
+      <XrayServices />
 
       <h1 className="text-3xl font-medium tracking-wider -mt-14">
         Schedule an Appointment

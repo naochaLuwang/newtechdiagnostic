@@ -33,7 +33,7 @@ const TestProcedures = () => {
   }, []);
 
   return (
-    <div className="w-full h-auto px-16 py-10 lg:py-20 bg-slate-50">
+    <div className="w-full h-auto px-8 py-10 lg:px-16 lg:py-20 bg-slate-50">
       <h1 className="text-lg font-medium lg:text-3xl text-neutral-700 md:text-xl">
         Popular Test Procedures
       </h1>
@@ -41,21 +41,29 @@ const TestProcedures = () => {
         Grab the scan without prior appoinment!
       </p>
 
-      <div className="grid grid-cols-4 gap-6 mt-10">
-        <div className="w-full h-40 px-6 py-8 bg-white border shadow-md border-slate-100 rounded-xl">
+      <div className="grid grid-cols-1 gap-4 mt-10 lg:gap-6 lg:grid-cols-4">
+        <div className="w-full h-48 px-6 py-8 bg-white border shadow-md border-slate-100 rounded-xl">
           <h1 className="text-base font-semibold tracking-wider text-blue-800">
             CONGENITAL ANOMALY SCAN
           </h1>
-          <p>Fasting Not required</p>
-          <p>Done at 20 weeks</p>
+          <p className="mt-2 text-xs">
+            Done around 18-22 weeks of pregnancy, checks the fetus for any
+            abnormalities. It assesses organs, limbs, brain, spine, and amniotic
+            fluid levels, helping detect issues early and reassure parents about
+            the baby&apos;s health
+          </p>
         </div>
 
-        <div className="w-full h-40 px-6 py-8 bg-white border shadow-md border-slate-100 rounded-xl ">
+        <div className="w-full h-48 px-6 py-8 bg-white border shadow-md border-slate-100 rounded-xl ">
           <h1 className="text-base font-semibold tracking-wider text-blue-800">
             OBS FOETAL DOPPLER
           </h1>
-          <p>Fasting Not required</p>
-          <p>Done at 20 weeks</p>
+          <p className="mt-2 text-xs">
+            The Obstetric Doppler (OBS) is a non-invasive ultrasound used to
+            monitor fetal heart rate and blood flow, especially in high-risk
+            pregnancies. It helps detect any abnormalities early, aiding in
+            timely interventions for the fetus&apos;s well-being.
+          </p>
         </div>
 
         <div className="w-full h-40 px-6 py-8 bg-white border shadow-md border-slate-100 rounded-xl ">
