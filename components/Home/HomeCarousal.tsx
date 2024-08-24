@@ -61,7 +61,7 @@ const HomeCarousal = () => {
           // renderButtonGroupOutside={true}
         >
           <div className="flex w-full h-full pt-10">
-            <div className="flex flex-col flex-shrink-0 px-16 py-12">
+            {/* <div className="flex flex-col flex-shrink-0 px-16 py-12">
               <h1 className="text-lg font-medium md:text-2xl lg:leading-relaxed lg:text-4xl text-neutral-600">
                 <span className="text-indigo-800">
                   Experience Precise Diagnosis
@@ -84,7 +84,9 @@ const HomeCarousal = () => {
                 loop
                 onLoadedData={handleLoadedData}
               ></video>
-            </div>
+            </div> */}
+
+            <Image src={"/banner.jpeg"} alt="banner" fill />
           </div>
           <div className="flex justify-between w-full h-full ">
             <div className="flex flex-col justify-center flex-shrink-0 h-full pl-16">

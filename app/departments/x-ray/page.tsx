@@ -1,4 +1,3 @@
-import { TabsDemo } from "@/components/UsgServices";
 import { XrayServices } from "@/components/XrayServices";
 import React from "react";
 
