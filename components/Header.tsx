@@ -97,7 +97,7 @@ const Header: React.FC = () => {
         </div> */}
 
         <div className="flex items-center justify-center py-2 bg-red-200 rounded-lg w-96">
-          <h1 className="text-base font-medium tracking-wide">TEST REPORT</h1>
+          <Link href="http://117.211.223.67:86/login" className="text-base font-medium tracking-wide">TEST REPORT</Link>
         </div>
       </div>
     </motion.div>
