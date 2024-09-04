@@ -40,7 +40,7 @@ interface Sublink {
 
 const MobileHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [data, setData] = useState<NavLink[] | null>(null);
+//   const [data, setData] = useState<NavLink[] | null>(null);
   const [isLoading, setLoading] = useState(false);
   const [openSublinks, setOpenSublinks] = useState<string[]>([]);
 
@@ -108,6 +108,74 @@ const MobileHeader = () => {
     maxHeight: "100vh",
     zIndex: 50,
   };
+
+   const data = [
+    {
+      id: "1",
+      title: "Home",
+      slug: "/",
+      order: 0,
+
+      isMulti: "NO",
+
+      sublinks: [],
+    },
+    {
+      id: "2",
+      title: "About Us",
+      slug: "/about",
+      order: 1,
+
+      isMulti: "NO",
+
+      sublinks: [],
+    },
+    {
+      id: "3",
+      title: "Departments",
+      slug: "/departments",
+      order: 2,
+
+      isMulti: "NO",
+
+      sublinks: [
+        {
+          id: "1",
+
+          title: "ULTRASOUND",
+          subtitle: "Explore wide ranges of ultrasound",
+          slug: "/ultrasound",
+          order: 1,
+        },
+        {
+          id: "2",
+
+          title: "DIGITAL XRAY",
+          subtitle: "Explore wide ranges of ultrasound",
+          slug: "/x-ray",
+          order: 2,
+        },
+        {
+          id: "3",
+
+          title: "CARDIOLOGY",
+          subtitle: "Explore wide ranges of ultrasound",
+          slug: "/cardiology",
+          order: 3,
+        },
+      ],
+    },
+    {
+      id: "4",
+      title: "Contact Us",
+      slug: "/contact",
+      order: 3,
+
+      isMulti: "NO",
+
+      sublinks: [],
+    },
+  ];
 
   return (
     <div
