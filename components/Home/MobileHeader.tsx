@@ -67,15 +67,15 @@ const MobileHeader = () => {
     };
   }, []);
 
-  useEffect(() => {
-    setLoading(true);
-    fetch(`/api/links`)
-      .then((res) => res.json())
-      .then((data) => {
-        setData(data);
-        setLoading(false);
-      });
-  }, []);
+//   useEffect(() => {
+//     setLoading(true);
+//     fetch(`/api/links`)
+//       .then((res) => res.json())
+//       .then((data) => {
+//         setData(data);
+//         setLoading(false);
+//       });
+//   }, []);
 
   useEffect(() => {
     if (isOpen) {
