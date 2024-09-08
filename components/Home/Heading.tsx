@@ -14,9 +14,9 @@ const Heading = () => {
             <BsPhoneFill className="h-6 lg:h-8" />
             <p className="text-xs lg:text-base">7005171909</p>
           </div>
-          <div className="flex items-center space-x-2">
+          <div className="items-center hidden space-x-2 lg:flex">
             <IoMdMail className="h-6 lg:h-8" />
-            <p className="text-xs lg:text-base">
+            <p className="text-xs lg:text-base ">
               contact@newtechdiagnostics.com
             </p>
           </div>

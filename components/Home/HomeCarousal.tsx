@@ -46,7 +46,7 @@ const HomeCarousal = () => {
   };
 
   return (
-    <div className="relative w-full lg:h-auto h-80">
+    <div className="relative w-full h-36 lg:h-auto">
       {!loading ? (
         <Carousel
           swipeable={false}
