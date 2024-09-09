@@ -61,7 +61,7 @@ const AddFAQ = () => {
           </label>
           <textarea
             id="answer"
-            rows="4"
+            rows={4}
             value={answer}
             onChange={(e) => setAnswer(e.target.value)}
             className="block w-full mt-1 border-gray-300 rounded-md shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50"
