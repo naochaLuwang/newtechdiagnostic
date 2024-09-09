@@ -198,7 +198,7 @@ const HomeCarousal = () => {
           arrows={false}
         >
           {carousels.map((carousel) => (
-            <div key={carousel.id} className="relative w-full h-96">
+            <div key={carousel.id} className="relative w-full h-36 lg:h-96">
               {carousel.imageUrl && (
                 <Image
                   src={carousel.imageUrl}
