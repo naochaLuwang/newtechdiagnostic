@@ -7,7 +7,7 @@ import { Analytics } from "@vercel/analytics/react";
 import MobileHeader from "@/components/Home/MobileHeader";
 import ScrollToTopButton from "@/components/ScrollTop";
 import ClientComponent from "@/components/ClientComponent";
-import { ClerkProvider } from "@clerk/nextjs";
+
 
 const quicksand = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
@@ -26,13 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ClerkProvider
-      appearance={{
-        elements: {
-          footer: "hidden",
-        },
-      }}
-    >
+
       <html lang="en" style={{ scrollBehavior: "smooth" }}>
         <body className={`${quicksand.className} scrollbar-hide `}>
           <Heading />
@@ -50,6 +44,6 @@ export default function RootLayout({
           <Analytics />
         </body>
       </html>
-    </ClerkProvider>
+
   );
 }
