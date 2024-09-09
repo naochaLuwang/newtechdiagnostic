@@ -94,11 +94,53 @@ const Navbar = () => {
         },
       ],
     },
+
     {
       id: "4",
+      title: "Notices",
+      slug: "/notices",
+      order: 4,
+
+      isMulti: "NO",
+
+      sublinks: [],
+    },
+
+    {
+      id: "5",
+      title: "Gallery",
+      slug: "/gallery",
+      order: 5,
+
+      isMulti: "NO",
+
+      sublinks: [],
+    },
+    {
+      id: "6",
+      title: "Career",
+      slug: "/career",
+      order: 6,
+
+      isMulti: "NO",
+
+      sublinks: [],
+    },
+    {
+      id: "7",
       title: "Contact Us",
       slug: "/contact",
-      order: 3,
+      order: 7,
+
+      isMulti: "NO",
+
+      sublinks: [],
+    },
+    {
+      id: "8",
+      title: "FAQs",
+      slug: "/faqs",
+      order: 8,
 
       isMulti: "NO",
 
@@ -107,7 +149,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className={`z-50 w-full h-10  hidden lg:block `}>
+    <div className={`z-50 w-full h-10  hidden lg:block pr-10`}>
       <div className="flex justify-end w-full ">
         <NavigationMenu>
           <NavigationMenuList>

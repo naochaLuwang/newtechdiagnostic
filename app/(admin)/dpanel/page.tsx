@@ -74,7 +74,7 @@ const AdminPage = () => {
 
 </Link>
 
-<Link href="/dpanel/carousal" className='w-full' >
+<Link href="/dpanel/notice" className='w-full' >
             <GlowingStarsBackgroundCard>
         <GlowingStarsTitle>Notices & Files</GlowingStarsTitle>
         <div className="flex items-end justify-between">

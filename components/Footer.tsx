@@ -9,6 +9,8 @@ const Footer = () => {
         &copy; 2024.Newtech Diagnostics, All rights reserved.
       </p>
 
+     <p>Sign In</p>
+
     </div>
   );
 };
