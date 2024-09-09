@@ -174,11 +174,11 @@ const AddNoticePage: React.FC = () => {
                 </p>
                 {filePreview && (
                   <div className="mt-4">
-                    {file.type.includes('image') ? (
+                    {file &&file.type.includes('image') ? (
                       <img src={filePreview} alt="File preview" className="h-auto max-w-full rounded-md shadow-md" />
                     ) : (
                       <a href={filePreview} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
-                        {file.name}
+                        {file && file.name}
                       </a>
                     )}
                   </div>
