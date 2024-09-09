@@ -12,10 +12,12 @@ const HomePage = () => {
     <div className="w-full h-auto">
       <HomeCarousal />
       <TestProcedures />
-      <Statistics />
-      <Offer />
-
       <Banner />
+      <Offer />
+      <Statistics />
+
+
+
       <Disorder />
 
       <EmbedMap />
