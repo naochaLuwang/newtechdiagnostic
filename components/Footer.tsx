@@ -1,4 +1,4 @@
-import { SignInButton } from "@clerk/nextjs";
+
 import React from "react";
 
 const Footer = () => {
@@ -8,7 +8,7 @@ const Footer = () => {
         {" "}
         &copy; 2024.Newtech Diagnostics, All rights reserved.
       </p>
-      <SignInButton />
+
     </div>
   );
 };
