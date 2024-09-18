@@ -49,7 +49,7 @@ const ContactPage = () => {
             </div>
             <h1 className="text-sm text-[#BDBDBF] lg:text-base">CALL US:</h1>
             <p className="text-xs text-center text-[#bdbdbf] lg:text-sm">
-              700598372
+              7005171909
             </p>
           </div>
           <div className="flex flex-col items-center w-full h-auto py-5 space-y-3 lg:py-10">
