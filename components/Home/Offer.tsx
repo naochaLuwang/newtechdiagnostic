@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -26,22 +27,27 @@ const testOffer = [
   {
     imageUrl: "Sonography.png",
     title: "ULTRASOUND",
+    link:"/departments/ultrasound"
   },
   {
     imageUrl: "mammography.png",
     title: "MAMMOGRAPHY",
+    link:"/departments/ultrasound"
   },
   {
     imageUrl: "CTS.png",
     title: "CT SCAN",
+    link:"/departments/ultrasound"
   },
   {
     imageUrl: "XRAY.png",
     title: "DIGITAL-XRAY",
+    link:"/departments/ultrasound"
   },
   {
     imageUrl: "laboratory.png",
     title: "LABORATORY",
+    link:"/departments/ultrasound"
   },
 ];
 
@@ -73,7 +79,7 @@ const Offer = () => {
           keyBoardControl={true}
         >
           {testOffer.map((test) => (
-            <div
+            <Link href={test.link}
               className="flex flex-col items-center justify-center w-64 h-64 ml-5 border-2 border-teal-700 rounded-md lg:w-72 lg:h-72"
               key={test.title}
             >
@@ -86,7 +92,7 @@ const Offer = () => {
                 />
               </div>
               <h1 className="font-medium tracking-wide">{test.title}</h1>
-            </div>
+            </Link>
           ))}
         </Carousel>
       </div>
