@@ -106,16 +106,16 @@ const Navbar = () => {
       sublinks: [],
     },
 
-    {
-      id: "5",
-      title: "Gallery",
-      slug: "/gallery",
-      order: 5,
+    // {
+    //   id: "5",
+    //   title: "Gallery",
+    //   slug: "/gallery",
+    //   order: 5,
 
-      isMulti: "NO",
+    //   isMulti: "NO",
 
-      sublinks: [],
-    },
+    //   sublinks: [],
+    // },
     {
       id: "6",
       title: "Career",
